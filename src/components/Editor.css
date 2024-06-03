@@ -44,8 +44,7 @@
 }
 
 .CodeMirror {
-  height: 100% !important;
-  
+  height: 100%;
 }
 
 .code-mirror-wrapper {
@@ -54,5 +53,4 @@
   border-bottom-left-radius: 0.5rem;
   overflow: hidden;
   background: rgb(118, 115, 115);
-
 }
