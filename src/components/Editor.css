@@ -7,10 +7,18 @@
   background-color: hsl(225, 6%, 25%);
 }
 
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed.CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden;
+}
+
 .editor-title {
   display: flex;
   color: white;
-
   font-weight: 600;
   background-color: black;
   height: 30px;
@@ -25,10 +33,6 @@
   cursor: pointer;
 }
 
-.code-mirror-wrapper {
-  background: rgb(118, 115, 115);
-}
-
 .editor-title {
   display: flex;
   justify-content: space-between;
@@ -40,7 +44,7 @@
 }
 
 .CodeMirror {
-  height: 100% !important;
+  height: 100%;
 }
 
 .code-mirror-wrapper {
@@ -48,4 +52,5 @@
   border-bottom-right-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   overflow: hidden;
+  background: rgb(118, 115, 115);
 }
